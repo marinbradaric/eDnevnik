@@ -1,8 +1,8 @@
 version: "3.7"
 services:
-  ednevnik:
+  eDnevnik:
     build: .
-    container_name: ednevnik
+    container_name: eDnevnik
     image: ednevnik:latest
     environment:
       - MYSQL_HOST=mysql
@@ -23,7 +23,7 @@ services:
       - rest-network
     environment:
       - MYSQL_ROOT_PASSWORD=lozinka
-      - MYSQL_DATABASE=ednevnik
+      - MYSQL_DATABASE=eDnevnik
       - MYSQL_USER=user
       - MYSQL_PASSWORD=lozinka
     volumes:
